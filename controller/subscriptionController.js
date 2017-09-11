@@ -1,5 +1,5 @@
 
-var config = require('../config');
+//var config = require('../config');
 const fs=require('fs');
 const path=require('path');
 //const { check, validationResult } = require('express-validator/check');
@@ -19,7 +19,7 @@ module.exports={
      }
        
      else{
-      let text=req.body.email;
+      let text=req.body.email+'   ';
       let r=fs.readFileSync('./dataSource/subscribers.txt','utf8');
       console.log('read'+r);
       text+=r;
